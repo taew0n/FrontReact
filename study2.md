@@ -40,6 +40,8 @@ babel-loader 설치 -> babel과 웹팩 연결
 - webpack 요소에 entry, module, output 순서로 설정해주는 것이 좋다.
 
 ## 구구단 웹팩으로 빌드하기
+- 실습 필요!
+
 
 ## @babel/preset-env와 plugins
 - entry에 babel-loader를 적용하는 것이다. plugin들의 모임이 preset이다.
@@ -49,4 +51,10 @@ babel-loader 설치 -> babel과 웹팩 연결
 - entry, module, output 사이에 plugins! (module 안의 plugins와 다르다)
 - 실무 코드에 plugin이 10개정도 끼어있기도 하다. plugin을 빼보면서 필요한
 것들을 차례로 찾아보는 것이 좋다.
+
+## 끝말잇기 class 만들기
+- class와 hooks 중에 하나만 쓰면 된다.
+- class method는 무조건 화살표 함수를 써야 한다. (render처럼 원래 있는 것은 필요 없다.)
+- onChange, onSubmitForm처럼 함수를 따로 빼줘야 참조를 하게 되어서 매번 render 될 때마다
+새로 만드는 일이 없어진다.
 - 
