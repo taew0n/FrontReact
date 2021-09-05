@@ -25,7 +25,7 @@ class WordRelay extends Component{
         this.input.focus();
     };
 
-    onChange = (e) => {
+    onChangeInput = (e) => {
         this.setState({value:e.target.value});
     };
 
@@ -41,8 +41,9 @@ class WordRelay extends Component{
                 <div>{this.state.word}</div>
                 <form onSubmit={this.onSubmitForm}>
                     <input ref={this.onRefInput} value={this.state.value} onChange={this.onChangeInput}/>
-                    <button>입력!</button>
+                    <button>입력!!!</button>
                 </form>
+                <div>{this.state.result}</div>
             </>
         )
     };

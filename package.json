@@ -5,7 +5,8 @@
   "main": "hi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack"
+    "devServer": "web`pack serve --env development",
+    "dev" : "webpack"
   },
   "author": "tae",
   "license": "ISC",
@@ -19,7 +20,10 @@
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "react-refresh": "^0.10.0",
     "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
   }
 }

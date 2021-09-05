@@ -57,4 +57,18 @@ babel-loader 설치 -> babel과 웹팩 연결
 - class method는 무조건 화살표 함수를 써야 한다. (render처럼 원래 있는 것은 필요 없다.)
 - onChange, onSubmitForm처럼 함수를 따로 빼줘야 참조를 하게 되어서 매번 render 될 때마다
 새로 만드는 일이 없어진다.
-- 
+- form 태그를 넣을 때는, value를 넣을거면 onChange를 넣거나 default value를 넣어라
+- 내용을 하나 바꿀 때마다 새로 webpack 빌드 하는 것이 귀찮을 땐!! 
+
+## Webpack 핫 리로딩
+- npm i react-refresh @pmmmwh/react-refresh-webpack-plugin -D
+- npm i -D webpack-dev-server
+- scripts 변경 "dev": "webpack serve --env development"
+- wepback dev server는 결과물을 dist 폴더에 저장한다. 소스코드의 변경사항이 생기면 자동으로 변경된다.
+- 리로딩은 새로고침이다. 기존 데이터가 날라감!!
+- 핫 리로딩은 기존 데이터를 유지하면서 화면을 바꿔준다 !!!
+
+
+## Hooks로 만들기
+- class가 더 구조화된 것처럼 보이지만, hooks도 짧아서 괜찮다.
+- jsx에서는 label의 for 대신 htmlFor, class대신 className을 사용한다.
