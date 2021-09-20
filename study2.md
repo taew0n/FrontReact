@@ -15,7 +15,7 @@
 
 # 2. 끝말잇기
 
-## WebPack
+## WebPack -> js의 모음집
 - 마법같은 도구,,,
 - 수천개로 쪼개진 자바스크립트 파일들을 쪼개진 것
 - node는 server, backend만 사용하는 것이 아니고 js 실행기일 뿐이다. -> webpack을 실행하기 위해 노드가 필요하다.
@@ -52,6 +52,7 @@ babel-loader 설치 -> babel과 웹팩 연결
 - 실무 코드에 plugin이 10개정도 끼어있기도 하다. plugin을 빼보면서 필요한
 것들을 차례로 찾아보는 것이 좋다.
 
+
 ## 끝말잇기 class 만들기
 - class와 hooks 중에 하나만 쓰면 된다.
 - class method는 무조건 화살표 함수를 써야 한다. (render처럼 원래 있는 것은 필요 없다.)
@@ -59,6 +60,7 @@ babel-loader 설치 -> babel과 웹팩 연결
 새로 만드는 일이 없어진다.
 - form 태그를 넣을 때는, value를 넣을거면 onChange를 넣거나 default value를 넣어라
 - 내용을 하나 바꿀 때마다 새로 webpack 빌드 하는 것이 귀찮을 땐!! 
+
 
 ## Webpack 핫 리로딩
 - npm i react-refresh @pmmmwh/react-refresh-webpack-plugin -D

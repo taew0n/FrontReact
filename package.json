@@ -5,7 +5,7 @@
   "main": "hi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devServer": "web`pack serve --env development",
+    "devServer": "webpack serve --env development",
     "dev" : "webpack"
   },
   "author": "tae",
